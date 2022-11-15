@@ -1,0 +1,40 @@
+services:
+    rabbitmq:
+        image: "rabbitmq:3-management-alpine"
+        ports:
+            - 5672:5672
+            - 15672:15672
+        healthcheck:
+            # Rabbit health check info https://www.rabbitmq.com/monitoring.html#health-checks
+            test: ["CMD", "rabbitmq-diagnostics", "-q", "status"]
+            # test: ["CMD", "rabbitmqctl", "status"] # alternative
+            interval: 10s
+            timeout: 10s
+            retries: 5
+    server:
+        build:
+            context: .
+            dockerfile: server.Dockerfile
+        ports:
+            - 8080:8080
+        env_file:
+            - .env
+        # restart: on-failure
+        depends_on:
+            rabbitmq:
+                condition: service_healthy
+    backend:
+        container_name: microservices_backend
+        build:
+            context: .
+            dockerfile: backend.Dockerfile
+        env_file:
+            - .env
+        stdin_open: true
+        tty: true
+        depends_on:
+            rabbitmq:
+                condition: service_healthy
+networks:
+    default:
+        name: broker_network

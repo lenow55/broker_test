@@ -1,0 +1,24 @@
+package main
+
+import (
+	"fmt"
+	"log"
+	"net/http"
+)
+
+// handleAPICache handles API calls for cached messages.
+func handleAPICache(cr *redis.Client) func(w http.ResponseWriter, r *http.Request) {
+	return func(w http.ResponseWriter, r *http.Request) {
+		data, err := cache.GetCacheJSON(cr)
+		if err != nil {
+			w.WriteHeader(http.StatusInternalServerError)
+			w.Write([]byte("500 – Something went wrong"))
+
+			log.Printf("get cache json: %s", err)
+			return
+		}
+
+		w.Header().Set("Content-Type", "application/json")
+		fmt.Fprint(w, data)
+	}
+}

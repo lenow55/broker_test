@@ -1,0 +1,122 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/nemo/clone_examples_from_github/microservices/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220828.0/
+Cache	internal/cache/cache.go	/^type Cache struct {$/;"	s	package:cache
+Cache	web/react/src/interfaces.ts	/^export interface Cache {$/;"	i
+Channel	internal/rabbit/conn.go	/^	Channel    *amqp.Channel$/;"	m	struct:rabbit.Conn	typeref:typename:*amqp.Channel
+Close	internal/rabbit/conn.go	/^func (conn *Conn) Close() error {$/;"	f	struct:rabbit.Conn	typeref:typename:error
+Config	internal/config/config.go	/^type Config struct {$/;"	s	package:config
+Conn	internal/rabbit/conn.go	/^type Conn struct {$/;"	s	package:rabbit
+Connection	internal/rabbit/conn.go	/^	Connection *amqp.Connection$/;"	m	struct:rabbit.Conn	typeref:typename:*amqp.Connection
+Count	internal/cache/cache.go	/^	Count    int64     `json:"count"`$/;"	m	struct:cache.Cache	typeref:typename:int64
+DeclareTopicExchange	internal/rabbit/exchange.go	/^func (conn *Conn) DeclareTopicExchange(name string) error {$/;"	f	unknown:rabbit.Conn	typeref:typename:error
+Exchange	internal/config/config.go	/^	Exchange string$/;"	m	struct:config.Config	typeref:typename:string
+FormatDuration	internal/timeutil/timeutil.go	/^func FormatDuration(timestamp int64) string {$/;"	f	package:timeutil	typeref:typename:string
+GetCache	internal/cache/cache.go	/^func GetCache(c *redis.Client) (*Cache, error) {$/;"	f	package:cache	typeref:typename:(*Cache, error)
+GetCacheJSON	internal/cache/cache.go	/^func GetCacheJSON(c *redis.Client) (string, error) {$/;"	f	package:cache	typeref:typename:(string, error)
+GetConn	internal/rabbit/conn.go	/^func GetConn(rabbitURL string) (*Conn, error) {$/;"	f	package:rabbit	typeref:typename:(*Conn, error)
+KeyBack	internal/config/config.go	/^	KeyBack  string$/;"	m	struct:config.Config	typeref:typename:string
+KeyCache	internal/config/config.go	/^	KeyCache string$/;"	m	struct:config.Config	typeref:typename:string
+KeyDB	internal/config/config.go	/^	KeyDB    string$/;"	m	struct:config.Config	typeref:typename:string
+KeyFront	internal/config/config.go	/^	KeyFront string$/;"	m	struct:config.Config	typeref:typename:string
+Message	internal/cache/cache.go	/^	models.Message$/;"	M	struct:cache.Message	typeref:typename:models.Message
+Message	internal/cache/cache.go	/^type Message struct {$/;"	s	package:cache
+Message	internal/models/message.go	/^type Message struct {$/;"	s	package:models
+Message	web/react/src/interfaces.ts	/^export interface Message {$/;"	i
+MessageCache	web/react/src/interfaces.ts	/^export interface MessageCache extends Message {$/;"	i
+Messages	internal/cache/cache.go	/^	Messages []Message `json:"messages"`$/;"	m	struct:cache.Cache	typeref:typename:[]Message
+New	internal/config/config.go	/^func New() *Config {$/;"	f	package:config	typeref:typename:*Config
+PostgresURL	internal/config/config.go	/^	PostgresURL string$/;"	m	struct:config.Config	typeref:typename:string
+Publish	internal/rabbit/publish.go	/^func (conn Conn) Publish(exch, rKey string, message []byte) error {$/;"	f	unknown:rabbit.Conn	typeref:typename:error
+PublishInChannel	internal/rabbit/publish.go	/^func PublishInChannel(ch *amqp.Channel, exch, rKey string, message []byte) error {$/;"	f	package:rabbit	typeref:typename:error
+QueueBack	internal/config/config.go	/^	QueueBack  string$/;"	m	struct:config.Config	typeref:typename:string
+QueueCache	internal/config/config.go	/^	QueueCache string$/;"	m	struct:config.Config	typeref:typename:string
+QueueDB	internal/config/config.go	/^	QueueDB    string$/;"	m	struct:config.Config	typeref:typename:string
+RabbitURL	internal/config/config.go	/^	RabbitURL   string$/;"	m	struct:config.Config	typeref:typename:string
+RedisURL	internal/config/config.go	/^	RedisURL    string$/;"	m	struct:config.Config	typeref:typename:string
+ServerAddr	internal/config/config.go	/^	ServerAddr  string$/;"	m	struct:config.Config	typeref:typename:string
+Source	internal/models/message.go	/^	Source string `json:"source"`$/;"	m	struct:models.Message	typeref:typename:string
+StartConsumer	internal/rabbit/consume.go	/^func (conn *Conn) StartConsumer(exch, qName, rKey string, handler func(amqp.Delivery) bool) erro/;"	f	unknown:rabbit.Conn	typeref:typename:error
+StartConsumerTemp	internal/rabbit/consume.go	/^func (conn *Conn) StartConsumerTemp(ctx context.Context, done chan<- bool, exch, rKey string, ha/;"	f	unknown:rabbit.Conn	typeref:typename:error
+StartReader	internal/websocket/read.go	/^func StartReader(ctx context.Context, done chan<- bool, ws *websocket.Conn, handler func([]byte)/;"	f	package:websocket	typeref:typename:error
+TestAPICache	cmd/server/api_test.go	/^func TestAPICache(t *testing.T) {$/;"	f	package:main
+TestFormatDuration	internal/timeutil/timeutil_test.go	/^func TestFormatDuration(t *testing.T) {$/;"	f	package:timeutil
+TestInsertToDB	cmd/database/database_test.go	/^func TestInsertToDB(t *testing.T) {$/;"	f	package:main
+TestUpdateRedis	cmd/cache/cache_test.go	/^func TestUpdateRedis(t *testing.T) {$/;"	f	package:main
+Text	internal/models/message.go	/^	Text   string `json:"text"`$/;"	m	struct:models.Message	typeref:typename:string
+Time	internal/models/message.go	/^	Time   int64  `json:"time"`$/;"	m	struct:models.Message	typeref:typename:int64
+TimeFmt	internal/cache/cache.go	/^	TimeFmt string `json:"timefmt"`$/;"	m	struct:cache.Message	typeref:typename:string
+Total	internal/cache/cache.go	/^	Total    int64     `json:"total"`$/;"	m	struct:cache.Cache	typeref:typename:int64
+alert	web/bootstrap/scss/style.scss	/^#notifications .alert{$/;"	c
+cache	internal/cache/cache.go	/^package cache$/;"	p
+conf	cmd/backend/backend.go	/^var conf = config.New()$/;"	v	package:main
+conf	cmd/cache/cache.go	/^var conf = config.New()$/;"	v	package:main
+conf	cmd/database/database.go	/^var conf = config.New()$/;"	v	package:main
+conf	cmd/server/server.go	/^	conf     = config.New()$/;"	v	package:main
+config	internal/config/config.go	/^package config$/;"	p
+count	web/react/src/interfaces.ts	/^  count: number;$/;"	p	interface:Cache
+created	init/database.sql	/^  created timestamp not null$/;"	E	table:messages
+ctx	cmd/cache/cache.go	/^var ctx = context.Background()$/;"	v	package:main
+ctx	cmd/server/api_test.go	/^var ctx = context.Background()$/;"	v	package:main
+filesStatic	cmd/server/server.go	/^var filesStatic embed.FS$/;"	v	package:main	typeref:typename:embed.FS
+filesTempl	cmd/server/server.go	/^var filesTempl embed.FS$/;"	v	package:main	typeref:typename:embed.FS
+getEnv	internal/config/config.go	/^func getEnv(key string, defaultVal string) string {$/;"	f	package:config	typeref:typename:string
+handleAPICache	cmd/server/api.go	/^func handleAPICache(cr *redis.Client) func(w http.ResponseWriter, r *http.Request) {$/;"	f	package:main	typeref:typename:func(w http.ResponseWriter, r *http.Request)
+handleHome	cmd/server/server.go	/^func handleHome(w http.ResponseWriter, r *http.Request) {$/;"	f	package:main
+handleMessages	cmd/server/server.go	/^func handleMessages(cr *redis.Client) func(w http.ResponseWriter, r *http.Request) {$/;"	f	package:main	typeref:typename:func(w http.ResponseWriter, r *http.Request)
+handleNotFound	cmd/server/server.go	/^func handleNotFound(w http.ResponseWriter) {$/;"	f	package:main
+handlePublishRabbit	cmd/server/server.go	/^func handlePublishRabbit(ch *amqp.Channel) func(msg []byte) error {$/;"	f	package:main	typeref:typename:func(msg []byte) error
+handleWebsocket	cmd/server/server.go	/^func handleWebsocket(w http.ResponseWriter, r *http.Request, conn *rabbit.Conn) {$/;"	f	package:main
+handleWebsocketConn	cmd/server/server.go	/^func handleWebsocketConn(conn *rabbit.Conn) func(w http.ResponseWriter, r *http.Request) {$/;"	f	package:main	typeref:typename:func(w http.ResponseWriter, r *http.Request)
+handleWriteWebsocket	cmd/server/server.go	/^func handleWriteWebsocket(ws *websocket.Conn) func(d amqp.Delivery) error {$/;"	f	package:main	typeref:typename:func(d amqp.Delivery) error
+id	init/database.sql	/^  id serial primary key,$/;"	E	table:messages
+input-btn-focus-width	web/bootstrap/scss/style.scss	/^$input-btn-focus-width: 0rem;$/;"	v
+insertToDB	cmd/database/database.go	/^func insertToDB(d amqp.Delivery, c *sql.DB) bool {$/;"	f	package:main	typeref:typename:bool
+iwebsocket	cmd/server/server.go	/^	iwebsocket "github.com\/ebosas\/microservices\/internal\/websocket"$/;"	P	package:github.com/ebosas/microservices/internal/websocket
+main	cmd/backend/backend.go	/^func main() {$/;"	f	package:main
+main	cmd/backend/backend.go	/^package main$/;"	p
+main	cmd/cache/cache.go	/^func main() {$/;"	f	package:main
+main	cmd/cache/cache.go	/^package main$/;"	p
+main	cmd/cache/cache_test.go	/^package main$/;"	p
+main	cmd/database/database.go	/^func main() {$/;"	f	package:main
+main	cmd/database/database.go	/^package main$/;"	p
+main	cmd/database/database_test.go	/^package main$/;"	p
+main	cmd/server/api.go	/^package main$/;"	p
+main	cmd/server/api_test.go	/^package main$/;"	p
+main	cmd/server/server.go	/^func main() {$/;"	f	package:main
+main	cmd/server/server.go	/^package main$/;"	p
+message	init/database.sql	/^  message text not null,$/;"	E	table:messages
+messages	init/database.sql	/^create table messages ($/;"	t
+messages	web/react/src/interfaces.ts	/^  messages: MessageCache[];$/;"	p	interface:Cache
+microservices	init/database.sql	/^create database microservices;$/;"	b
+models	internal/models/message.go	/^package models$/;"	p
+notifications	web/bootstrap/scss/style.scss	/^#notifications .alert{$/;"	i
+notifications	web/bootstrap/scss/style.scss	/^#notifications{$/;"	i
+printMessages	cmd/backend/backend.go	/^func printMessages(d amqp.Delivery) bool {$/;"	f	package:main	typeref:typename:bool
+publishInput	cmd/backend/backend.go	/^func publishInput(c *rabbit.Conn) {$/;"	f	package:main
+rabbit	internal/rabbit/conn.go	/^package rabbit$/;"	p
+rabbit	internal/rabbit/consume.go	/^package rabbit$/;"	p
+rabbit	internal/rabbit/exchange.go	/^package rabbit$/;"	p
+rabbit	internal/rabbit/publish.go	/^package rabbit$/;"	p
+source	web/react/src/interfaces.ts	/^  source: string;$/;"	p	interface:Message
+success	web/bootstrap/scss/style.scss	/^$success: #4254B8;$/;"	v
+testArguments	cmd/cache/cache_test.go	/^func testArguments(t *testing.T, message, source string, time int64) *amqp.Delivery {$/;"	f	package:main	typeref:typename:*amqp.Delivery
+testArguments	cmd/database/database_test.go	/^func testArguments(t *testing.T, message, source string, time int64) *amqp.Delivery {$/;"	f	package:main	typeref:typename:*amqp.Delivery
+testUpdateRedis	cmd/server/api_test.go	/^func testUpdateRedis(t *testing.T, c *redis.Client, message string) {$/;"	f	package:main
+text	web/react/src/interfaces.ts	/^  text: string;$/;"	p	interface:Message
+time	web/react/src/interfaces.ts	/^  time: number;$/;"	p	interface:Message
+timefmt	web/react/src/interfaces.ts	/^  timefmt: string;$/;"	p	interface:MessageCache
+timeutil	internal/timeutil/timeutil.go	/^package timeutil$/;"	p
+timeutil	internal/timeutil/timeutil_test.go	/^package timeutil$/;"	p
+total	web/react/src/interfaces.ts	/^  total: number;$/;"	p	interface:Cache
+updateRedis	cmd/cache/cache.go	/^func updateRedis(d amqp.Delivery, c *redis.Client) bool {$/;"	f	package:main	typeref:typename:bool
+upgrader	cmd/server/server.go	/^	upgrader = websocket.Upgrader{} \/\/ use default options$/;"	v	package:main
+websocket	internal/websocket/read.go	/^package websocket$/;"	p
