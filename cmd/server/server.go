@@ -10,11 +10,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ebosas/microservices/internal/cache"
 	"github.com/ebosas/microservices/internal/config"
 	"github.com/ebosas/microservices/internal/rabbit"
 	iwebsocket "github.com/ebosas/microservices/internal/websocket"
-	"github.com/go-redis/redis/v8"
 	"github.com/gorilla/websocket"
 	"github.com/streadway/amqp"
 )

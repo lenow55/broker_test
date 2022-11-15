@@ -25,8 +25,8 @@ function Form({sendMessage}: formProps) {
         <input
           type="text"
           className="form-control"
-          placeholder="Enter message"
-          aria-label="Enter message"
+          placeholder="Enter number for fibonachi"
+          aria-label="Enter number for fibonachi"
           aria-describedby="button-send"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
